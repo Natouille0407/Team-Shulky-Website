@@ -44,7 +44,6 @@ header a {
 }
 
 header a:hover {
-    font-size: 1.2em;
     transition: 0.1s;
 }
 
@@ -152,7 +151,7 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 3em;
     font-weight: bolder;
 }
@@ -165,7 +164,7 @@ body {
     flex-wrap: wrap;
 }
 
-article img{
+#members article img {
     height: 400px;
     width: auto;
     margin-top: 50px;
@@ -179,4 +178,21 @@ article img{
     margin-bottom: 15px;
     font-size: larger;
     font-weight: bolder;
+}
+
+#members article {
+    filter: drop-shadow(0 0 2rem black);
+    transition:0.3s;
+}
+
+#members article:hover {
+    filter: drop-shadow(0 0 2rem #956695);
+    transition:0.3s;
+}
+
+/* projects */
+
+#project article {
+    text-align: center;
+    margin-bottom: 15px;
 }
