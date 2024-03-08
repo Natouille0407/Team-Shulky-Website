@@ -64,7 +64,3 @@
         });
     });
 })();
-
-$(document).ready(function() {
-    $('#email').attr('href', 'mailto:abc@mail.com');
-  });
