@@ -1,0 +1,43 @@
+/* General */
+
+body {
+    background-color: #2b2b2b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header {
+    background-color: #956695;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+header h2{
+    margin: 0px 45px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+header a {
+    font-weight: 600;
+    margin: 0px 15px;
+    font-size: 1.5em;
+}
+
+header img {
+    height: 100px;
+    margin: 0px 15px;
+}
