@@ -34,6 +34,7 @@ header nav {
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-left: 50px;
 }
 
 header a {
@@ -182,17 +183,60 @@ body {
 
 #members article {
     filter: drop-shadow(0 0 2rem black);
-    transition:0.3s;
+    transition: 0.3s;
 }
 
 #members article:hover {
     filter: drop-shadow(0 0 2rem #956695);
-    transition:0.3s;
+    transition: 0.3s;
 }
 
 /* projects */
 
-#project article {
+#project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
+}
+
+.project-article {
+    margin: 30px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #956695;
+    flex-direction: column;
+}
+
+.project-img {
+    background-image: url(../img/fnaf1-article-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+    padding-bottom: 70px;
     margin-bottom: 15px;
+}
+
+.project-article h3 {
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.article-button {
+    height: 50px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
 }
