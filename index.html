@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/lib/slick/slick-theme.min.css" />
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Team Shulky Website</title>
 </head>
@@ -14,7 +16,7 @@
     <header>
 
         <nav>
-            <a>Members</a>
+            <a href="#members">Members</a>
             <a>Project</a>
             <h2>Team <img src="assets/img/Shulker.jpg"> Shulky</h2>
             <a>Join the team</a>
@@ -25,13 +27,73 @@
 
     <main>
 
-      <div id="carrousel">
+        <div class="container">
 
-      </div>
+            <div class="carousel">
+
+                <div class="carousel-inner">
+                    <div class="slide">
+
+                        <img src="assets/img/fnaf1-carrousel.jpg" alt="Image 1">
+                    </div>
+
+                    <div class="slide">
+
+                        <img src="assets/img/fnaf2-carrousel.jpg" alt="Image 2">
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+
+                    <button id="prev">
+                        <div class="arrow-left"></div>
+                    </button>
+
+                    <button id="next">
+                        <div class="arrow-right"></div>
+                    </button>
+                </div>
+
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+
+        <p class="title">Members :</p>
+
+        <div id="members">
+            <article>
+                <img src="assets/img/natouille'skin.png" id="natouille">
+                <p>Natouille</p>
+            </article>
+
+            <article>
+                <img src="assets/img/william95.png" id="william95">
+                <p>William95</p>
+            </article>
+
+
+            <article>
+                <img src="assets/img/cross.png" id="cross">
+                <p>0Cross0</p>
+            </article>
+
+
+            <article>
+                <img src="assets/img/labonnemiche.png" id="labonnemiche">
+                <p>Labonnemiche_77</p>
+            </article>
+        </div>
+
+        <p class="title">Project :</p>
 
     </main>
 
+    <!-- jQuery -->
+    <script src="/assets/lib/"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="/assets/lib/slick//slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

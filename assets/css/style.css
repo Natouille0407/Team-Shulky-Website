@@ -6,21 +6,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* header */
 
 header {
     background-color: #956695;
-    height: 125px;
+    height: 100px;
     display: flex;
     justify-content: center;
 }
 
-header h2{
+header h2 {
     margin: 0px 45px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 header nav {
@@ -34,10 +39,144 @@ header nav {
 header a {
     font-weight: 600;
     margin: 0px 15px;
-    font-size: 1.5em;
+    font-size: 1em;
+    transition: 0.1s;
+}
+
+header a:hover {
+    font-size: 1.2em;
+    transition: 0.1s;
 }
 
 header img {
     height: 100px;
     margin: 0px 15px;
+}
+
+/* carousel */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    height: 80vh;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-controls {
+    position: absolute;
+    z-index: 5;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-controls button {
+    padding: 10px;
+    background: none;
+    color: black;
+    border-radius: 100px;
+    border: none;
+}
+
+.carousel-dots {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    right: 50%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots .dot {
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    border: 10px solid #956695 !important;
+}
+
+.carousel-dots .inactive {
+    border: 10px solid white;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-left: 30px solid white;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+    border-right: 30px solid white;
+}
+
+/* main */
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+/* members */
+
+#members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article img{
+    height: 400px;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#members article p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: bolder;
 }
