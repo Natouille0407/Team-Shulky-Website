@@ -243,6 +243,10 @@ body {
 
 /* join the team */
 
+#join-the-team {
+    margin-top: 50px;
+}
+
 #join-the-team .form input {
     width: 250px;
     border-radius: 10px;
