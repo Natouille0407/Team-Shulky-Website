@@ -96,9 +96,9 @@
         <?php
 // Connexion à la base de données MySQL
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "article_shulky";
+$username = "id21978315_nat";
+$password = "#Nat040708";
+$dbname = "id21978315_shulkydb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
