@@ -93,15 +93,39 @@
 
         <div id="project">
 
-            <article class="project-article">
-                <div class="project-img fnaf1"></div>
-                <h3>Freddy Fazbear Craft</h3>
-                <a class="article-button"
-                    href="https://static.planetminecraft.com/files/resource_media/schematic/fnafcraft-e400.zip">Download
-                    - CurseForge Config</a>
-                <a class="article-button" href="https://mega.nz/folder/I2F2XLSL#gv7YEuRHIFWzJTveVZFldw">Download -
-                    Mega</a>
-            </article>
+        <?php
+// Connexion à la base de données MySQL
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "article_shulky";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérifier la connexion
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Récupérer les données de la base de données
+$sql = "SELECT * FROM article";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Afficher les données sous forme d'articles HTML
+    while($row = $result->fetch_assoc()) {
+        echo '<article class="project-article">';
+        echo '<div class="project-img ' . $row["img"] . '"></div>';
+        echo '<h3>' . $row["name"] . '</h3>';
+        echo '<a class="article-button" href="' . $row["curseforge_link"] . '">Download - CurseForge Config</a>';
+        echo '<a class="article-button" href="' . $row["mega_link"] . '">Download - Mega</a>';
+        echo '</article>';
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 
         </div>
 
