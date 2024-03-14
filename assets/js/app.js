@@ -14,7 +14,7 @@
     function slideTo(index) {
         currentSlide = index >= $slides.length || index < 1 ? 0 : index;
         $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
-        $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide? 'active': 'inactive'}`);
+        $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide ? 'active' : 'inactive'}`);
     }
 
     function showSlide() {

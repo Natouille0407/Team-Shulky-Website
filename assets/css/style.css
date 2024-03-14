@@ -93,6 +93,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .carousel-controls {
@@ -255,10 +256,11 @@ body {
 }
 
 #join-the-team .form input {
-    width: 250px;
+    width: 30vw;
     border-radius: 10px;
     border: #956695 solid 2px;
     text-align: center;
+    font-size: 2vw;
 }
 
 form {
@@ -273,6 +275,7 @@ form {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .form1 {
@@ -287,18 +290,23 @@ form {
 }
 
 .form2 input {
-    height: 125px;
+    height: 18vw;
 }
 
 .form1 input {
-    height: 50px;
+    height: 8vw;
+}
+
+label {
+    font-size: 1.5vw;
+    margin-bottom: 15px;
 }
 
 .submit {
-    margin: 15px 5000px;
-    padding-left: 75px;
-    padding-right: 75px;
-    height: 50px;
+    margin: 25px 5000px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 4vw;
     border-radius: 10px;
     border: #956695 solid 2px;
     display: flex;
@@ -338,24 +346,6 @@ footer img {
     margin: 0px 15px;
 }
 
-@media (max-width: 1200px) {
-
-    header h2 {
-        font-size: 3vw;
-        margin: 0px 5px;
-    }
-
-    header a {
-        font-size: 2vw;
-        margin: 0px 8px;
-    }
-
-    header nav {
-        margin: 0px 50px;
-    }
-
- }
-
 @media (max-width: 800px) {
 
     header h2 {
@@ -369,7 +359,23 @@ footer img {
     }
 
     header nav {
-        margin: 0px 50px;
+        margin: 0px 100px;
     }
 
- }
+    label {
+        font-size: 2.5vw;
+    }
+
+    .form2 input {
+        height: 15vw;
+    }
+
+    .form1 input {
+        height: 10vw;
+    }
+
+    .submit {
+        height: 8vw;
+    }
+
+}
