@@ -3,7 +3,6 @@
 
 (function () {
     "use strict";
-    const slideTimeout = 5000;
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
     const $slides = document.querySelectorAll('.slide');
@@ -35,18 +34,12 @@
     prev.addEventListener('click', () => slideTo(--currentSlide));
     next.addEventListener('click', () => slideTo(++currentSlide));
 
-    intervalId = setInterval(showSlide, slideTimeout);
-
     $slides.forEach($elt => {
         let startX;
         let endX;
 
         $elt.addEventListener('mouseover', () => {
             clearInterval(intervalId);
-        }, false);
-
-        $elt.addEventListener('mouseout', () => {
-            intervalId = setInterval(showSlide, slideTimeout);
         }, false);
 
         $elt.addEventListener('touchstart', (event) => {
@@ -64,3 +57,54 @@
         });
     });
 })();
+
+
+// code article
+
+const articleInfo = [
+
+    {
+
+        id: 0,
+        name: "Freddy Fazbear Craft",
+        cf_link: "https://static.planetminecraft.com/files/resource_media/schematic/fnafcraft-e400.zip",
+        mg_link: "https://mega.nz/folder/I2F2XLSL#gv7YEuRHIFWzJTveVZFldw"
+
+    }
+
+]
+
+function articleGen() {
+    const article_container = document.getElementById("project");
+
+    for (let i = 0; i < articleInfo.length; i++) {
+        const article = articleInfo[i];
+
+        const articleElement = document.createElement('article');
+        articleElement.classList.add('project-article');
+
+        const imgDiv = document.createElement('div');
+        imgDiv.classList.add('project-img', 'fnaf1');
+        articleElement.appendChild(imgDiv);
+
+        const title = document.createElement('h3');
+        title.textContent = article.name;
+        articleElement.appendChild(title);
+
+        const cfLink = document.createElement('a');
+        cfLink.classList.add('article-button');
+        cfLink.href = article.cf_link;
+        cfLink.textContent = 'Download - CurseForge Config';
+        articleElement.appendChild(cfLink);
+
+        const mgLink = document.createElement('a');
+        mgLink.classList.add('article-button');
+        mgLink.href = article.mg_link;
+        mgLink.textContent = 'Download - Mega';
+        articleElement.appendChild(mgLink);
+
+        article_container.appendChild(articleElement);
+    }
+}
+
+articleGen();
