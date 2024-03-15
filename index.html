@@ -16,7 +16,7 @@
         <nav>
             <a href="#members">Members</a>
             <a href="#project">Project</a>
-            <h2>Team <img src="assets/img/Shulker.jpg"> Shulky</h2>
+            <h2>Team <img src="assets/img/Shulker.jpg" alt="logo"> Shulky</h2>
             <a href="#project">Join the team</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -32,12 +32,25 @@
                 <div class="carousel-inner">
 
                     <div class="slide">
-                        <img src="assets/img/fnaf1-carrousel.jpg" alt="Image 1">
+                        
+                        <a class="slide-title" href="#ffc">Freddy Fazbear Craft</a>
+
+                        <video muted autoplay disablePictureInPicture loop class="slide-video" id="fnaf1-video">
+                            <source src="assets/video/ffc1.mp4" type="video/mp4">
+                        </video>
+
                     </div>
 
                     <div class="slide">
-                        <img src="assets/img/fnaf2-carrousel.jpg" alt="Image 2">
+
+                        <a class="slide-title">Freddy Fazbear Craft 2</a>
+
+                        <video muted autoplay disablePictureInPicture loop class="slide-video" id="fnaf2-video">
+                            <source src="assets/video/ffc2.mp4" type="video/mp4">
+                        </video>
+
                     </div>
+
                 </div>
 
                 <div class="carousel-controls">
@@ -55,34 +68,46 @@
             </div>
         </div>
 
+        <p class="title">Who are we :</p>
+
+        <div id="waw">
+
+           <p>
+
+
+
+           </p>
+
+        </div>
+
         <p class="title">Members :</p>
 
         <div id="members">
 
             <a href="https://fr.namemc.com/profile/Natouille04.1">
                 <article>
-                    <img src="assets/img/natouille'skin.png" id="natouille">
+                    <img src="assets/img/natouille'skin.png" id="natouille" alt="natouille's skin">
                     <p>Natouille</p>
                 </article>
             </a>
 
             <a href="https://fr.namemc.com/profile/william95">
                 <article>
-                    <img src="assets/img/william95.png" id="william95">
+                    <img src="assets/img/william95.png" id="william95" alt="william's skin">
                     <p>William95</p>
                 </article>
             </a>
 
             <a href="https://fr.namemc.com/profile/0cross0">
                 <article>
-                    <img src="assets/img/cross.png" id="cross">
+                    <img src="assets/img/cross.png" id="cross" alt="cross's skin">
                     <p>0Cross0</p>
                 </article>
             </a>
 
             <a href="https://fr.namemc.com/profile/Labonnemiche_77">
                 <article>
-                    <img src="assets/img/labonnemiche.png" id="labonnemiche">
+                    <img src="assets/img/labonnemiche.png" id="labonnemiche" alt="labonnemiche's skin">
                     <p>Labonnemiche_77</p>
                 </article>
             </a>
@@ -92,8 +117,6 @@
         <p class="title">Project :</p>
 
         <div id="project">
-
-
 
         </div>
 
@@ -114,7 +137,7 @@
 
                     <div class="form2">
                         <label>Describe Yourself a bit :</label>
-                        <input id="message" type="text" name="description of you" required>
+                        <textarea id="message" name="description of you" required></textarea>
                     </div>
 
                 </div>
@@ -130,7 +153,7 @@
 
     <footer id="contact">
 
-        <h2>Team <img src="assets/img/Shulker.jpg"> Shulky</h2>
+        <h2>Team <img src="assets/img/Shulker.jpg" alt="logo"> Shulky</h2>
 
     </footer>
 
