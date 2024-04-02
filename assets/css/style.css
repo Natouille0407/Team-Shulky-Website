@@ -203,6 +203,11 @@ body {
     font-size: larger;
 }
 
+#waw p{
+    font-size: larger;
+    font-weight: bold;
+}
+
 /* members */
 
 #members {
